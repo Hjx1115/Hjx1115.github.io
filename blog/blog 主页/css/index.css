@@ -16,7 +16,7 @@ article{
                 inset 0 0 60px #f9f6de,
                 0 0 20px #fff;
     border-radius: 50%;
-    animation: myMove 4s linear infinite;
+    animation: myMove 4s linear 1s infinite;
     z-index: -1;
 }
 @keyframes myMove{
@@ -63,8 +63,10 @@ article{
     background-color: #fff;
     line-height: 60px;
     height: 70px;
+    display: flex;
+    justify-content: center;
 }
-.header div span{
+.icon-boke{
     color:#2757e7;
     box-shadow: 5px 5px 5px rgb(50, 50, 157);
     font-size: 30px;
@@ -72,14 +74,15 @@ article{
 }
 .header-nav {
     float: right;   
-    margin-right: 200px;
+    margin-left: 200px;
 }
+
 .header-nav a{
     margin-right: 100px;
     margin-left: none;
     font-size: 20px;
 }
-.header-nav span{
+.container-header span{
     font-size: 28px;
     color: #2757e7;
 }
@@ -91,6 +94,19 @@ article{
     background-position: 50% 60%;
     height: 185px;
     border-radius: 10px;
+}
+/* 回到顶部按钮 */
+.return_box{
+    width: 70px;
+    height: 70px;
+    background-color: #eaeaea;
+    border-radius: 0 10px 10px 0;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    position: fixed;
+    top: 600px;
 }
 /*主体部分*/
 .main{
@@ -207,9 +223,10 @@ footer{
     text-align: center;
     color: #6f6c6c; 
     border-radius: 10px 10px 0 0;
+    padding: 5px;
 }
 footer a{
-    padding: 0 25px;
+    padding: 0px 25px;
 }
 footer a:hover{
     color: blue;
