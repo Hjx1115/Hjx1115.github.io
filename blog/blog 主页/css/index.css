@@ -16,7 +16,7 @@ article{
                 inset 0 0 60px #f9f6de,
                 0 0 20px #fff;
     border-radius: 50%;
-    animation: myMove 4s linear 1s infinite;
+    animation: myMove 4s linear 0s infinite;
     z-index: -1;
 }
 @keyframes myMove{
@@ -187,23 +187,20 @@ article{
 }
 .fenlei a,.liebiao a{
     display: inline-block;
-    width: 130px;
+    width: 260px;
     line-height: 35px;
     background-color: #eaeaea;
     text-align: center;
     margin-bottom:5px;
     border-radius: 10px;
 }
-.liuyan a{
+.liuyan p{
     display: inline-block;
-    background-color: #eaeaea;
     width: 260px;
     line-height: 35px;
-    color: #333;
     margin-bottom: 5px;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 10px;
+    font-size: 16px;
+    text-indent: 32px;
 }
 .liuyan:hover,.fenlei:hover,.liebiao:hover{
     box-shadow: 3px 3px 5px #6f6c6c;

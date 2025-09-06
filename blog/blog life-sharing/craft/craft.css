@@ -1,0 +1,102 @@
+body{
+    background-image: url(./images/bac.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.iconfont{
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.left{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 300px;
+    text-align: left;
+    text-indent: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+a{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: blue;
+}
+header{
+    height: 100px;
+    color: blue;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.title{
+    padding-left: 600px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0%;
+}
+.content{
+    display: flex;
+    width: 1300px;
+    height: 450px;
+}
+hr{
+    background-color: gray;
+    width: 1100px;
+    height: 3px;
+    border: black 1px solid;
+}
+
+.img1{
+    width: 400px;
+    padding-left: 100px;
+    flex: 3;
+}
+.img2{
+    flex: 1;
+    width: 300px;
+}
+.img3{
+    width: 400px;
+    padding-left: 100px;
+    flex: 1;
+}
+.img4{
+    width: 300px;
+    flex: 1;
+}
+.img5{
+    width: 600px;
+    padding-left: 100px;
+}
+.img6{
+    padding-left: 100px;
+    width: 300px;
+    flex: 1;
+}
+.img7{
+    width: 400px;
+    flex: 1;
+}
+.img11{
+    padding-left: 100px;
+    width: 350px;
+}
+.img9{
+    width: 400px;
+    padding-left: 100px;
+}
+.img10{
+    width: 400px;
+}
+.img8{
+    padding-left: 100px;
+    width: 600px;
+}
