@@ -6,6 +6,9 @@
     font-size: 30px;
     color: blue;
 }
+.iconfont:hover{
+    color: purple;
+}
 header{
     height: 150px;
     display: flex;
@@ -16,7 +19,6 @@ header{
     color: blue;
     font-size: 40px;
     margin-left: 450px;
-    /* text-align: center; */
     flex: 3;
  }
 .return{
@@ -26,6 +28,9 @@ header{
     font-style: italic;
     text-decoration: none;
     flex: 2;
+}
+.return:hover{
+    color: purple;
 }
 .content{ 
     height: 800px;
@@ -67,6 +72,7 @@ section{
     margin-left: 5%;
     justify-content: center;
     flex: 2;
+    line-height: 30px;
     font-weight: 500;
 }
 .touxiang{
@@ -79,8 +85,14 @@ section{
 ul{
     font-size: 17px;
     margin: 10px;
+    list-style-type: disc;
+
 }
 hr{
     opacity: .7;
     align-items: center;
+    background-color: grey;
+    width: 500px;
+    height: 5px;
+    border: none;
 }

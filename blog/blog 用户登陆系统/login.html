@@ -24,34 +24,34 @@
             </div>
         </div>
         <!-- 注册页面 -->
-        <div class="register-form">
+        <form class="register-form" action="#" method="post"  target="_blank">
             <div class="title-box">
                 <h1>注册</h1>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="用户名">
-                <input type="password" placeholder="密码">
-                <input type="password" placeholder="确认密码">
+                <input type="text" placeholder="用户名" name="username">
+                <input type="password" placeholder="密码" name="password">
+                <input type="password" placeholder="确认密码" name="password_confirm">
             </div>
             <div class="btn-box">
-                <button>注册</button>
+                <button type="submit">注册</button>
                 <p onclick="mySwitch()">已有账号？去登录</p>
             </div>
-        </div>
+        </form>
         <!-- 登陆页面 -->
-        <div class="login-form">
+        <form class="login-form" action="http://www.baidu.com" method="post" target="_blank">
             <div class="title-box">
                 <h1>登录</h1>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="用户名">
-                <input type="password" placeholder="密码">
+                <input type="text" placeholder="用户名" name="username">
+                <input type="password" placeholder="密码" name="password">
             </div>
             <div class="btn-box">
-                <button>登录</button>
+                <button type="submit">登录</button>
                 <p onclick="mySwitch()">还没有账号？去注册</p>
             </div>
-        </div>
+        </form>
     </div>
     <script>
         let flag=true

@@ -3,71 +3,20 @@ body{
     background-size: cover;
     background-repeat: repeat-y;
 }
-.iconfont{
-    margin-left: 40px;
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: underline;
-}
-.left{
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.right{
-    width: 300px;
-    text-align: left;
-    text-indent: 40px;
-    font-size: 20px;
-    font-weight: 600;
-    padding-left: 30px;
-}
-a{
-    text-align: left;
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: none;
-    color: blue;
-}
-header{
-    height: 100px;
-    color: blue;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.title{
-    padding-left: 600px;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0%;
-}
-.content{
-    display: flex;
-    width: 1300px;
-    height: 450px;
-}
-hr{
-    background-color: gray;
-    width: 1100px;
-    height: 3px;
-    border: black 1px solid;
-}
-
 .img1{
-    width: 600px;
-    padding-left: 100px;
+    width: 570px;
+    margin-left: 100px;
 }
 .img2{
     width: 400px;
-    padding-left: 100px;
+    margin-left: 100px;
 }
 .img3{
     width: 400px;
-    padding-left: 100px;
+    margin-left: 100px;
 }
 .img4{
-    padding-left: 100px;
+    margin-left: 100px;
     width: 300px;
     flex: 2;
 }
