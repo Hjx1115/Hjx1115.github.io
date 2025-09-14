@@ -23,38 +23,38 @@
             justify-content: center;
         }
         .heart{
-            width: 200px;
-            height: 200px;
+            width: 12.5rem;
+            height: 12.5rem;
             background-color: red;
             position: relative;
             transform: rotate(45deg);
             animation: beat 1.2s alternate infinite;
-            box-shadow: 0 0 30px red;
+            box-shadow: 0 0 1.875rem red;
         }
         body div{
             border-radius: 0 0 6% 0;
         }
         .heart::before{
             content:"";
-            width: 200px;
-            height: 100px;
+            width: 12.5rem;
+            height: 6.25rem;
             background-color: red;
             position: absolute;
             left: 0;
-            top: -99px;
-            border-radius: 100px 100px 0 0;
-            box-shadow: 0 0 30px red;
+            top: -6.1875rem;
+            border-radius: 6.25rem 6.25rem 0 0;
+            box-shadow: 0 0 1.875rem red;
         }
         .heart::after{
             content:"";
-            width: 100px;
-            height: 200px;
+            width: 6.25rem;
+            height: 12.5rem;
             background-color: red;
             position: absolute;
-            left: -99px;
+            left: -6.1875rem;
             top: 0;
-            border-radius: 100px 0 0 100px;
-            box-shadow: 0 0 30px red;
+            border-radius: 6.25rem 0 0 6.25rem;
+            box-shadow: 0 0 1.875rem red;
         }
         /*跳动*/
         @keyframes beat{
@@ -67,13 +67,13 @@
             }
         }
         .heart p{
-            font-size: 40px;
+            font-size: 2.5rem;
             color: pink;
             text-align: left;
             transform: rotate(-45deg);
         }
         .heart span{
-            font-size: 40px;
+            font-size: 2.5rem;
             color: pink;
             text-align: left;
             transform: rotate(-45deg);   

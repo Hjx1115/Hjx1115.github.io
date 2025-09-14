@@ -1,28 +1,31 @@
 *{
    margin: 0;
 } 
+html{
+    font-size: 16px;
+}
 .iconfont{
-    margin-left: 50px;
-    font-size: 30px;
+    margin-left: 3.125rem;
+    font-size: 1.875rem;
     color: blue;
 }
 .iconfont:hover{
     color: purple;
 }
 header{
-    height: 150px;
+    height: 9.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .big_title{
     color: blue;
-    font-size: 40px;
-    margin-left: 450px;
+    font-size: 2.5rem;
+    margin-left: 28.125rem;
     flex: 3;
  }
 .return{
-    font-size: 25px;
+    font-size: 1.5625rem;
     color:blue;
     font-weight: 700;
     font-style: italic;
@@ -33,7 +36,7 @@ header{
     color: purple;
 }
 .content{ 
-    height: 800px;
+    height: 50rem;
     background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,29 +45,29 @@ section{
     display: flex;
 }
 .section_left{
-    margin-left: 200px;
+    margin-left: 12.5rem;
     flex: 1;
     display: block;
     justify-content: center;
 }
 .img{
-    padding: 30px;
-    width: 300px;
-    height: 370px;
+    padding: 1.875rem;
+    width: 18.75rem;
+    height: 23.125rem;
     float: left;
-    border: 5px solid black;
+    border: .3125rem solid black;
 }
 .section_left_top{
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
 
 }
 .section_left_bottom{
-    width: 300px;
-    height: 50px;
-    font-size: 25px;
+    width: 18.75rem;
+    height: 3.125rem;
+    font-size: 1.5625rem;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 1.5625rem;
     clear: both;
 }
 
@@ -72,19 +75,19 @@ section{
     margin-left: 5%;
     justify-content: center;
     flex: 2;
-    line-height: 30px;
+    line-height: 1.875rem;
     font-weight: 500;
 }
 .touxiang{
-    width: 300px;
+    width: 18.75rem;
     float: left;
 }
 .small_title{
-    font-size: 23px;
+    font-size: 1.4375rem;
 }
 ul{
-    font-size: 17px;
-    margin: 10px;
+    font-size: 1.0625rem;
+    margin: .625rem;
     list-style-type: disc;
 
 }
@@ -92,7 +95,7 @@ hr{
     opacity: .7;
     align-items: center;
     background-color: grey;
-    width: 500px;
-    height: 5px;
+    width: 31.25rem;
+    height: .3125rem;
     border: none;
 }

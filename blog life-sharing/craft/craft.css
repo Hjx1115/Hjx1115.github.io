@@ -4,48 +4,48 @@ body{
     background-repeat: repeat-y;
 }
 .img1{
-    width: 400px;
-    margin-left: 100px;
+    width: 25rem;
+    margin-left: 6.25rem;
     flex: 3;
 }
 .img2{
     flex: 1;
-    width: 300px;
+    width: 18.75rem;
 }
 .img3{
-    width: 400px;
-    margin-left: 100px;
+    width: 25rem;
+    margin-left: 6.25rem;
     flex: 1;
 }
 .img4{
-    width: 300px;
+    width: 18.75rem;
     flex: 1;
 }
 .img5{
-    width: 600px;
-    margin-left: 100px;
+    width: 37.5rem;
+    margin-left: 6.25rem;
 }
 .img6{
-    margin-left: 100px;
-    width: 300px;
+    margin-left: 6.25rem;
+    width: 18.75rem;
     flex: 1;
 }
 .img7{
-    width: 400px;
+    width: 25rem;
     flex: 1;
 }
 .img11{
-    margin-left: 100px;
-    width: 350px;
+    margin-left: 6.25rem;
+    width: 21.875rem;
 }
 .img9{
-    width: 400px;
-    margin-left: 100px;
+    width: 25rem;
+    margin-left: 6.25rem;
 }
 .img10{
-    width: 400px;
+    width: 25rem;
 }
 .img8{
-    margin-left: 100px;
-    width: 600px;
+    margin-left: 6.25rem;
+    width: 37.5rem;
 }

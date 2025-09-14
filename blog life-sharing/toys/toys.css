@@ -4,23 +4,23 @@ body{
     background-repeat: repeat-y;
 }
 .img1{
-    width: 570px;
-    margin-left: 100px;
+    width: 35.625rem;
+    margin-left: 6.25rem;
 }
 .img2{
-    width: 400px;
-    margin-left: 100px;
+    width: 25rem;
+    margin-left: 6.25rem;
 }
 .img3{
-    width: 400px;
-    margin-left: 100px;
+    width: 25rem;
+    margin-left: 6.25rem;
 }
 .img4{
-    margin-left: 100px;
-    width: 300px;
+    margin-left: 6.25rem;
+    width: 18.75rem;
     flex: 2;
 }
 .img5{
-    width: 300px;
+    width: 18.75rem;
     flex: 1;
 }

@@ -1,136 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>跑步火柴人</title>
     <style>
-        body{
+        html {
+            font-size: 16px;
+        }
+
+        body {
             background-color: black;
         }
-        .container{
-            height: 300px;
-            width: 300px;
-            margin: 50px;
+
+        .container {
+            height: 18.75rem;
+            width: 18.75rem;
+            margin: 3.125rem;
 
         }
-        .person{
+
+        .person {
             position: absolute;
-            left: 150px;
-            top: 160px;
+            left: 9.375rem;
+            top: 10rem;
             animation: run 5s infinite ease-in;
         }
-        .head{
+
+        .head {
             position: absolute;
-            width: 30px;
-            height: 30px;
-            border: 5px solid #fff;
+            width: 1.875rem;
+            height: 1.875rem;
+            border: .3125rem solid #fff;
             border-radius: 50%;
-            top: -30px;
-            left: -6px;
+            top: -1.875rem;
+            left: -0.375rem;
             animation: head 2s alternate infinite;
         }
-        .torso{
+
+        .torso {
             width: 0;
-            height: 60px;
-            border-left: 5px solid #fff;
+            height: 3.75rem;
+            border-left: .3125rem solid #fff;
             position: absolute;
             left: 0;
-            top: 15px;
+            top: .9375rem;
         }
-        .person .part{
+
+        .person .part {
             position: absolute;
             left: 0;
-            top: 75px;
+            top: 4.6875rem;
         }
-        .person .part.arm{
-            width: 40px;
-            height: 45px;
-            border-left: 5px solid #fff;
-            border-bottom: 5px solid #fff;
+
+        .person .part.arm {
+            width: 2.5rem;
+            height: 2.8125rem;
+            border-left: .3125rem solid #fff;
+            border-bottom: .3125rem solid #fff;
             position: absolute;
-            top: 15px;
-            right: 300px;
-            transform-origin: 0% 0% 0px;
+            top: .9375rem;
+            right: 18.75rem;
+            transform-origin: 0% 0% 0rem;
             animation: arm 1s ease-in-out infinite;
         }
-        .person .part.arm.one{
-            transform: rotate3d(0,0,1,80deg);
-            
+
+        .person .part.arm.one {
+            transform: rotate3d(0, 0, 1, 80deg);
+
         }
-        .person .part.arm.two{
-            transform: rotate3d(0,0,1,-80deg);
-            animation-delay:-0.5s;
-        }
-        .person .part.leg{
-            height: 60px;
-            width: 60px;
-            border-right: 5px solid #fff;
-            border-top: 5px solid #fff;
-            transform-origin: 0% 0% 0px;
-            animation: leg 1s ease-in-out infinite;
-        }
-        .person .part.leg.one{
-            transform: rotate3d(0,0,1,100deg);
-        }
-        .person .part.leg.two{
-            transform: rotate3d(0,0,1,10deg);
+
+        .person .part.arm.two {
+            transform: rotate3d(0, 0, 1, -80deg);
             animation-delay: -0.5s;
         }
+
+        .person .part.leg {
+            height: 3.75rem;
+            width: 3.75rem;
+            border-right: .3125rem solid #fff;
+            border-top: .3125rem solid #fff;
+            transform-origin: 0% 0% 0rem;
+            animation: leg 1s ease-in-out infinite;
+        }
+
+        .person .part.leg.one {
+            transform: rotate3d(0, 0, 1, 100deg);
+        }
+
+        .person .part.leg.two {
+            transform: rotate3d(0, 0, 1, 10deg);
+            animation-delay: -0.5s;
+        }
+
         /*头部动画*/
-        @keyframes head{
-            0%{
-                transform: rotate3d(0,0,1,5deg);
+        @keyframes head {
+            0% {
+                transform: rotate3d(0, 0, 1, 5deg);
             }
-            25%{
-                transform: rotate3d(0,0,1,-30deg) skew(15deg,0deg);
+
+            25% {
+                transform: rotate3d(0, 0, 1, -30deg) skew(15deg, 0deg);
             }
-            50%{
-                transform: rotate3d(0,0,1,-30deg);
+
+            50% {
+                transform: rotate3d(0, 0, 1, -30deg);
             }
-            75%{
-                transform: rotate3d(0,0,1,-30deg) skew(15deg,0deg);
+
+            75% {
+                transform: rotate3d(0, 0, 1, -30deg) skew(15deg, 0deg);
             }
-            
-            100%{
-                transform: rotate3d(0,0,1,20deg) skew(15deg,0deg);
+
+            100% {
+                transform: rotate3d(0, 0, 1, 20deg) skew(15deg, 0deg);
             }
         }
+
         /*胳膊摆动*/
-        @keyframes arm{
-            0%{
-                transform: rotate3d(0,0,1,80deg);
+        @keyframes arm {
+            0% {
+                transform: rotate3d(0, 0, 1, 80deg);
             }
-            50%{
-                transform: rotate3d(0,0,1,-70deg);
+
+            50% {
+                transform: rotate3d(0, 0, 1, -70deg);
             }
-            100%{
-                transform: rotate3d(0,0,1,80deg);
+
+            100% {
+                transform: rotate3d(0, 0, 1, 80deg);
             }
         }
+
         /*腿摆动*/
-        @keyframes leg{
-            0%{
-                transform: rotate3d(0,0,1,-5deg);
+        @keyframes leg {
+            0% {
+                transform: rotate3d(0, 0, 1, -5deg);
             }
-            50%{
-                transform: rotate3d(0,0,1,150deg);
+
+            50% {
+                transform: rotate3d(0, 0, 1, 150deg);
             }
-            100%{
-                transform: rotate3d(0,0,1,-5deg);
+
+            100% {
+                transform: rotate3d(0, 0, 1, -5deg);
             }
         }
+
         /*向前跑*/
-        @keyframes run{
-            0%{
-                transform: translate(-200px,0px);
+        @keyframes run {
+            0% {
+                transform: translate(-12.5rem, 0rem);
             }
-            100%{
-                transform: translate(1800px,0px);
+
+            100% {
+                transform: translate(112.5rem, 0rem);
             }
         }
     </style>
 </head>
+
 <body>
     <!--火柴人结构-->
     <div class="container">
@@ -144,4 +173,5 @@
         </div>
     </div>
 </body>
+
 </html>
