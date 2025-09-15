@@ -1,130 +1,160 @@
 @charset "utf-8";
-html{
+
+html {
     font-size: 1vw;
 }
-body{
-    background-image:url(../images/群山.jpg) ;
+
+body {
+    background-image: url(../images/群山.jpg);
     background-size: cover;
     z-index: -1;
     height: 100%;
 }
+.whole{
+    height: 100%;
+}
+hr {
+    background-color: gray;
+    height: .1rem;
+    margin: .5rem auto;
+    width: 70rem;
+}
+
 /* 泡泡实现 */
-article{
+article {
     position: absolute;
     bottom: 0;
-    background: radial-gradient(circle at 72% 28%,#fff .1875rem,#ff7edf 8%,#5b5b5b,#aad7f9 100%);
+    background: radial-gradient(circle at 72% 28%, #fff .1875rem, #ff7edf 8%, #5b5b5b, #aad7f9 100%);
     box-shadow: inset 0 0 .375rem #fff,
-                inset .1875rem 0 .375rem #eaf5fc,
-                inset .125rem -0.125rem .625rem #efcde6,
-                inset 0 0 3.75rem #f9f6de,
-                0 0 1.25rem #fff;
+        inset .1875rem 0 .375rem #eaf5fc,
+        inset .125rem -0.125rem .625rem #efcde6,
+        inset 0 0 3.75rem #f9f6de,
+        0 0 1.25rem #fff;
     border-radius: 50%;
     animation: myMove 4s linear 0s infinite;
     z-index: -1;
 }
-@keyframes myMove{
-    0%{
+
+@keyframes myMove {
+    0% {
         transform: translateY(0%);
         opacity: 1;
     }
-    50%{
-        transform: translate(10%,-1000%);
+
+    50% {
+        transform: translate(10%, -1000%);
     }
-    75%{
-        transform: translate(-20%,-1200%);
+
+    75% {
+        transform: translate(-20%, -1200%);
     }
-    99%{
+
+    99% {
         opacity: 0.9;
     }
-    100%{
+
+    100% {
         transform: translateY(-1000%) scale(1.5);
         opacity: 0;
     }
 }
-/**/
+
 
 /*顶部导航*/
-.topnav{
+.topnav {
     background-color: #222;
-    color:#a5a5a5 ;
-    height: 2.5rem;
-    display: flex;
-}
-h1{
-    font-size: 1.5625rem;
-    padding-left: 9.375rem;
-}
-.container1{
-    flex: 5;
-}
-.container2{
-    padding-top: .3125rem;
-    flex: 1;
-}
-
-.topnav a{
     color: #a5a5a5;
-    font-size: 1.25rem;
-}
-.topnav a:hover{
-    color: #fff;
-}
-/*头部导航*/
-.header{
-    background-color: #fff;
-    border: .0625rem solid gray;
-    line-height: 3.75rem;
-    height: 4.375rem;
+    height: 3vw;
     display: flex;
-    justify-content: center;
     position: sticky;
     top: 0;
 }
-.icon-boke{
-    color:#2757e7;
+
+h1 {
+    line-height: 3vw;
+    font-size: 2rem;
+    padding-left: 10rem;
+}
+
+.container1 {
+    flex: 5;
+}
+
+.container2 {
+    flex: 1;
+    line-height: 3vw;
+}
+
+.topnav a {
+    color: #a5a5a5;
+    font-size: 1.5rem;
+}
+
+.topnav a:hover {
+    color: #fff;
+}
+
+/*头部导航*/
+.header {
+    background-color: #fff;
+    border: .0625rem solid gray;
+    line-height: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 3vw;
+}
+
+.icon-boke {
+    color: #2757e7;
     box-shadow: .3125rem .3125rem .3125rem rgb(50, 50, 157);
-    font-size: 1.875rem;
-    padding: 0 .625rem;
+    line-height: 5vw;
     float: left;
     display: block;
     width: auto;
 }
-.header-nav{
-    float: right;   
+
+.header-nav {
+    float: right;
     margin: 0 6.25rem;
     display: flex;
     overflow: auto;
     overflow-y: hidden;
 }
-.header-nav span{
+
+.header-nav span {
     flex-shrink: 0;
-   
+
 }
-.header-nav a{
+
+.header-nav a {
     margin-right: 6.25rem;
     margin-left: none;
-    font-size: 1.25rem;
+    font-size: 2rem;
     transition: all .5s;
 }
-.header-nav a:hover{
-    font-size: 1.375rem;
+
+.header-nav a:hover {
+    font-size: 2.5rem;
 }
-.container-header{
+
+.container-header {
     display: flex;
 }
-.container-header span{
-    font-size: 1.75rem;
+
+.container-header span {
+    font-size: 2rem;
     color: #2757e7;
-    
 }
 
 /*横幅*/
-.main{
-
+.main {
     width: 83%;
     margin: auto;
 }
-.banner{
+
+.banner {
     background-image: url(../images/群山.jpg);
     background-size: cover;
     background-position: 50% 60%;
@@ -133,8 +163,9 @@ h1{
     width: 83%;
     margin: auto;
 }
+
 /* 回到顶部按钮 */
-.return_box{
+.return_box {
     width: 3.125rem;
     height: 3.125rem;
     background-color: #eaeaea;
@@ -147,44 +178,54 @@ h1{
     top: 80%;
     transition: all .5s;
 }
-.return_box:hover{
+
+.return_box:hover {
     font-size: .875rem;
 }
+
 /*主体部分*/
-.main{
+.main {
     margin: .9375rem auto;
     height: 100%;
+    display: flex;
+    flex-direction: row;
 }
+
 /*左边文章列表*/
-.main-left{
-    width: 70%;
+.main-left {
     height: 100%;
-    float: left;
+    flex: 14;
 }
-.main-left li{
-    border: .1875rem solid #e9e9e9;
+
+.main-left li {
+    width: 95%;
+    border: .2rem solid #e9e9e9;
     background-color: #fff;
-    padding: .9375rem;
-    margin-bottom: .9375rem;
+    margin-bottom: 1rem;
     border-radius: .625rem;
-    height: 9.375rem;
-    transition: all .7s;
-}
-.main-left img{
-    width: 30%;
     height: 100%;
+    transition: all .7s;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.main-left img {
+    width: 30%;
     float: left;
     margin: 0 .9375rem;
 }
-.main-left span{
+
+.main-left span {
     padding: 2rem;
-    color:#333;
+    color: #333;
 }
-.main-left h3{
+
+.main-left h3 {
     margin-bottom: 1.25rem;
     font-size: 1.5625rem;
 }
-.main-left p{
+
+.main-left p {
     font-size: 1rem;
     color: #6f6c6c;
     text-indent: 2em;
@@ -193,21 +234,28 @@ h1{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    
+
 }
-.main-left li:hover{
+
+.main-left li:hover {
     box-shadow: .3125rem .3125rem .5rem #000;
 }
-.main-left .a,.main-left .b{
+
+.main-left .a,
+.main-left .b {
     transition: all .7s;
 }
-.main-left .a:hover,.main-left .b:hover{
+
+.main-left .a:hover,
+.main-left .b:hover {
     box-shadow: .3125rem .3125rem .5rem #00a7ea;
 }
-.page{
+
+.page {
     text-align: center;
 }
-.page a{
+
+.page a {
     border-radius: .3125rem;
     display: inline-block;
     width: 2.5rem;
@@ -217,41 +265,52 @@ h1{
     font-size: 1.25rem;
     color: #333;
 }
-.page a:hover,.page a.on{
+
+.page a:hover,.page a.on {
     background-color: #00a7ea;
     color: #fff;
+    animation: rubberBand 1s;
 }
+
 /*右边栏*/
-.main-right{
-    width: 25%;
+.main-right {
     background-color: #fff;
-    float: right;
-    border: .1875rem  solid #e9e9e9;
-    padding: 0 .9375rem;
+    flex: 5;
+    border: .2rem solid #e9e9e9;
+    padding: 0 1rem;
     border-radius: .625rem;
     height: 100%;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.main-right h3{
+.box1, .box2, .box3{
+    width: 95%;
+}
+.main-right h3 {
     line-height: 3.4375rem;
     font-size: 1.25rem;
     color: #333;
     font-weight: 18.75rem;
     border-bottom: .1875rem solid #eaeaea;
 }
-.main-right div{
-    padding: .9375rem;
+
+.main-right div {
+    padding: 1rem;
 }
-.fenlei a,.liebiao a{
+
+.fenlei a,
+.liebiao a {
     display: inline-block;
     width: 95%;
     line-height: 2.1875rem;
     background-color: #eaeaea;
     text-align: center;
-    margin-bottom:.3125rem;
+    margin-bottom: .3125rem;
     border-radius: .625rem;
 }
-.liuyan p{
+
+.liuyan p {
     display: inline-block;
     width: 95%;
     line-height: 2.1875rem;
@@ -259,18 +318,33 @@ h1{
     font-size: 1rem;
     text-indent: 2em;
 }
-.liuyan:hover,.fenlei:hover,.liebiao:hover{
+
+.liuyan:hover,
+.fenlei:hover,
+.liebiao:hover {
     box-shadow: .1875rem .1875rem .3125rem #6f6c6c;
 }
-.liuyan,.fenlei,.liebiao{
-    transition: all .5s;
-}
-.liuyan a:hover{
-    color: #00a7ea;
-}
 
+.liuyan,
+.fenlei,
+.liebiao {
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.liuyan a:hover,
+.fenlei a:hover,
+.liebiao a:hover{
+    animation: pulse 1s;
+
+}
+.main-right p{
+    display: block;
+}
 /*友情链接和尾部*/
-footer{
+footer {
     background-color: #eaeaea;
     opacity: 0.6;
     height: 3.75rem;
@@ -278,13 +352,97 @@ footer{
     font-weight: 500;
     float: center;
     text-align: center;
-    color: #6f6c6c; 
+    color: #6f6c6c;
     border-radius: .625rem .625rem 0 0;
     padding: .3125rem;
 }
-footer a{
+
+footer a {
     padding: 0rem 1.5625rem;
 }
-footer a:hover{
+
+footer a:hover {
     color: blue;
+}
+
+/*移动端布局*/
+/* 平板and手机 */
+@media screen and (max-width:2100px) {
+    .header {
+        top: 5vw;
+    }
+    .header-nav a {
+        margin-right: 6.25rem;
+        margin-left: none;
+        font-size: 2.8rem;
+        transition: all .5s;
+    }
+    .header-nav a:hover {
+        font-size: 3.2rem;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .main-right p{
+        font-size: 2rem;
+        line-height: 3rem;
+        height: 6rem;
+    }
+    .main-right h3{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .main-right a{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        height: 4rem;
+    } 
+    .main-left{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .main-left li {
+        width: 100%;
+    }
+    .main-left h3,.main-right h3{
+        font-size: 3rem;
+    }
+    .main-left p,.main-left span{
+        font-size: 2rem;
+    }
+    .container-header span {
+        line-height: 5vw;
+        font-size: 3rem;
+    }
+    .topnav {
+        height: 5vw;
+    }
+    h1 {
+        line-height: 5vw;
+        font-size: 3rem;
+    }
+    .topnav a {
+        font-size: 3rem;
+    }
+    .page a {
+        border-radius: 1rem;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 3rem;
+    }
+    .return_box {
+        width: 8rem;
+        height: 8rem;
+        font-size: 2rem;
+        line-height: 3rem;
+        padding-top: 1rem;
+        top: 75%;
+    }
+    .return_box:hover {
+        font-size:2.5rem;
+    }
+    .container2 {
+        line-height: 5vw;
+    }
 }

@@ -7,11 +7,14 @@ html{
     font-size: 1vw;
 }
 .return{
-    padding-top: .9375rem;
-    padding-left: .625rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
     font-size: 1.375rem;
     color: #fff;
     font-weight: bold;
+}
+.iconfont{
+    text-decoration: underline;
 }
 .return:hover{
     opacity: 0.7;
@@ -30,7 +33,7 @@ button {
     cursor: pointer;
 }
 td {
-    max-width: 3.125rem;
+    width: 3.125rem;
 }
 
 #bg {
@@ -51,12 +54,11 @@ td {
 }
 
 #root {
-    width: 50rem;
+    width: 50%;
     margin: auto;
-    margin-top: 9.375rem;
+    margin-top: 10rem;
     background: #ffffff50;
     backdrop-filter: blur(5rem) saturate(130%);
-    -webkit-backdrop-filter: blur(5rem) saturate(130%);
     border-radius: .625rem;
     padding: 1.25rem;
 }
@@ -113,16 +115,16 @@ td {
 #root .item-add button {
     width: 5rem;
     border-radius: 0 .625rem .625rem 0;
+    font-size: 1rem;
 }
 
 #root .item-add input {
     padding: 0 .625rem;
     box-sizing: border-box;
-    border-radius: 0;
-    border: .0625rem solid #ddd;
     width: calc(100% - 5rem);
     border: .0625rem solid #8771e1;
     border-radius: .625rem 0 0 .625rem;
+    font-size: 1rem;
 }
 
 #root table {
@@ -137,7 +139,7 @@ td {
 #root table tr td {
     border: none;
     height: 3.125rem;
-    width: 25rem;
+    width: 49%;
     padding: .625rem;
     box-sizing: border-box;
     text-align: center;
@@ -215,4 +217,46 @@ span{
         transform: translateY(-1000%) scale(1.5);
         opacity: 0;
     }
+}
+
+/*移动端布局*/
+/* 平板and手机 */
+@media screen and (max-width:2100px) {
+    .return{
+        font-size: 4rem;
+    }
+    td {
+        width: 5rem;
+    }
+    #root {
+        width: 80%;
+        margin-top: 10rem;
+    }
+    #root .title {
+        font-size: 4rem;
+        margin: 2rem auto;
+    }
+    #root .item-add input {
+        height: 7rem;
+        width: calc(100% - 15rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    #root .item-add button {
+        width: 15rem;
+        height: 7rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    #root .con{
+        font-size: 3rem;
+        margin: 1rem auto;
+    }
+    #root table tr td {
+        height: 8rem;
+        width: 49%;
+        font-size: 3rem;
+    }
+
 }
