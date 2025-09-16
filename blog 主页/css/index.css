@@ -131,12 +131,12 @@ h1 {
 .header-nav a {
     margin-right: 6.25rem;
     margin-left: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: all .5s;
 }
 
 .header-nav a:hover {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .container-header {

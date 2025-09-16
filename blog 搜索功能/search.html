@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,34 @@
     <link rel="stylesheet" href="./images/font/iconfont.css">
     <title>搜索</title>
 </head>
-<body>
-    <input type="text" list="mylist" autofocus required>
-    <datalist id="mylist">
-        <option value="麦芽糖（一）"></option>
-        <option value="文章2"></option>
-        <option value="文章3"></option>
-        <option value="文章4"></option>
-        <option value="文章5"></option>
-        <option value="文章6"></option>
-        <option value="文章7"></option>
-    </datalist>
 
-    
+<body>
+    <div class="return">
+        <a href="../index.html">
+            <div class="iconfont icon-qita-fanhuizhuye"> - 返回首页</div>
+        </a>
+    </div>
+    <div id="bg">
+        <img src="../blog 留言功能/yixing.jpg">
+    </div>
+
+    <div id="root">
+        <div class="title">搜索相关内容</div>
+        <div class="item-add">
+            <input type="text" list="mylist" id="list" placeholder="请输入关键词" autofocus required>
+            <datalist id="mylist">
+                <option value="麦芽糖（一）"></option>
+                <option value="文章2"></option>
+                <option value="文章3"></option>
+                <option value="文章4"></option>
+                <option value="文章5"></option>
+                <option value="文章6"></option>
+                <option value="文章7"></option>
+            </datalist>
+            <button onclick="add()">搜索</button>
+        </div>
+    </div>
+
 </body>
+
 </html>

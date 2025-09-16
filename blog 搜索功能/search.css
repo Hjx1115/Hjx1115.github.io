@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+html{
+    font-size: 1vw;
+}
+.return{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+.iconfont{
+    color: #fff;
+    text-decoration: underline;
+}
+.return:hover{
+    opacity: 0.7;
+}
+
+button {
+    cursor: pointer;
+}
+td {
+    width: 3.125rem;
+}
+
+#bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 2.5rem;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#root {
+    width: 50%;
+    margin: auto;
+    margin-top: 10rem;
+    background: #ffffff50;
+    backdrop-filter: blur(5rem) saturate(130%);
+    border-radius: .625rem;
+    padding: 1.25rem;
+}
+
+#root .title {
+    padding: 1.25rem .9375rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+#root .item-add {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .9375rem;
+}
+
+#root .item-add button {
+    width: 5rem;
+    border-radius: 0 .625rem .625rem 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    height: 2.5rem;
+    border: none !important;
+    border-radius: 0;
+    background: linear-gradient(90deg, #ad6eca, #3b91d8);
+    color: white;
+    padding: .3125rem;
+}
+
+#root .item-add input {
+    padding: 0 .625rem;
+    box-sizing: border-box;
+    width: calc(100% - 5rem);
+    border: .0625rem solid #8771e1;
+    border-radius: .625rem 0 0 .625rem;
+    font-size: 1rem;
+}
+
+
+/* 泡泡实现 */
+span{
+    position: absolute;
+    bottom: 0;
+    background: radial-gradient(circle at 72% 28%,#fff .1875rem,#ff7edf 8%,#5b5b5b,#aad7f9 100%);
+    box-shadow: inset 0 0 .375rem #fff,
+                inset .1875rem 0 .375rem #eaf5fc,
+                inset .125rem -0.125rem .625rem #efcde6,
+                inset 0 0 3.75rem #f9f6de,
+                0 0 1.25rem #fff;
+    border-radius: 50%;
+    animation: myMove 4s linear infinite;
+    z-index: -1;
+}
+@keyframes myMove{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(10%,-1000%);
+    }
+    75%{
+        transform: translate(-20%,-1200%);
+    }
+    99%{
+        opacity: 0.9;
+    }
+    100%{
+        transform: translateY(-1000%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/*移动端布局*/
+/* 平板and手机 */
+@media screen and (max-width:2100px) {
+    .return{
+        font-size: 4rem;
+    }
+    #root {
+        width: 80%;
+        margin-top: 10rem;
+    }
+    #root .title {
+        font-size: 4rem;
+        margin: 2rem auto;
+    }
+    #root .item-add input {
+        height: 7rem;
+        width: calc(100% - 15rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    #root .item-add button {
+        width: 15rem;
+        height: 7rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+}
