@@ -151,6 +151,7 @@ td {
     box-sizing: border-box;
     height: 1.875rem;
     width: 3.75rem;
+    font-size: 1rem;
     border: none !important;
     border-radius: .25rem;
     background: green;
@@ -258,5 +259,11 @@ span{
         width: 49%;
         font-size: 3rem;
     }
+    #root table button {
+        height: 4rem;
+        width: 8rem;
+        font-size: 2.3rem;
+    }
+    
 
 }
