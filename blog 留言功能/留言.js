@@ -23,7 +23,9 @@ function complete(idNum) {
     localStorage.removeItem(idNum.id)
 }
 
-
+fanhui.onclick = function () {
+    history.back()
+}
 // <!-- 泡泡函数 -->
 {/* <script>
     const bubleCreate=()=>{

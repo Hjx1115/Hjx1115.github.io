@@ -7,14 +7,15 @@
     <title>个人信息</title>
     <link rel="stylesheet" href="./about_me.css">
     <link rel="stylesheet" href="./images/font/iconfont.css">
+    <script src="../blog 主页/js/js.js"></script>
 </head>
 
 <body>
 
     <div class="content">
         <header>
-            <span class="iconfont icon-qita-fanhuizhuye">
-                <a class="return" href="../index.html"> - 返回主页</a>
+            <span class="iconfont icon-qita-fanhuizhuye" id="fanhui">
+                <a class="return" href="../index.html"> - 上一页</a>
             </span>
             <h1 class="big_title">个人信息</h1>
         </header>
@@ -78,7 +79,11 @@
         </section>
     </div>
 
-
+    <script>
+        fanhui.onclick = function () {
+            history.back()
+        }
+    </script>
 </body>
 
 </html>

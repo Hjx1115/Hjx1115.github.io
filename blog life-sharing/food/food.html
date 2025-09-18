@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="../lifesharing.css">
     <link rel="stylesheet" href="./food.css">
     <link rel="stylesheet" href="./images/font/iconfont.css">
+    <script src="../../blog 主页/js/js.js"></script>
     <title>美食鉴赏</title>
 </head>
 
 <body>
-    <div class="return">
+    <div class="return" id="fanhui">
         <span class="iconfont icon-qita-fanhuizhuye">
-            <a href="../../index.html"> - 返回主页</a>
+            <a> - 上一页</a>
         </span>
     </div>
     <header>
-        <p class="title" id="top">美食鉴赏</p>
+        <p class="title">美食鉴赏</p>
         <audio src="../背景乐.mp3" controls loop></audio> <!-- autoplay -->
     </header>
     <div class="content">
@@ -74,9 +75,24 @@
         </div>
     </div>
     <!-- 回到顶部按钮 -->
-    <div class="return_box">
-        <a href="#top">回到<br>顶部</a>
+    <div class="return_box" id="return_box">
+        <a>回到<br>顶部</a>
     </div>
+    <script>
+        fanhui.onclick = function () {
+            history.back()
+        }
+        onscroll = function () {
+            if ((document.documentElement.scrollTop || document.body.scrollTop) > Math.min(innerWidth/2,innerHeight/2)) {
+                return_box.style.display = "block"
+            } else {
+                return_box.style.display = "none"
+            }
+        }
+        return_box.onclick=function(){
+            scrollTo(0,0)
+        }
+    </script>
 </body>
 
 </html>

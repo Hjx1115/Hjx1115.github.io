@@ -19,7 +19,7 @@
         </div>
         <div class="container2">
             <span>
-                <a href="./blog 关于我/about_me.html">关于我</a>
+                <a href="../blog 关于我/about_me.html">关于我</a>
             </span>
         </div>
     </div>
@@ -48,10 +48,10 @@
         
     </header>
     <!--横幅-->
-    <div class="container banner" id="top"></div>
+    <div class="container banner"></div>
     <!-- 回到顶部按钮 -->
-    <div class="return_box">
-        <a href="#top">回到<br>顶部</a>
+    <div class="return_box" id="return_box">
+        <a>回到<br>顶部</a>
     </div>
     <!--主体部分-->
     <section class="container cf main">
@@ -155,7 +155,19 @@
         <p>联系我  QQ： 2292720676</p>
     </footer>
     <!--尾部-->
-    
 </div>
+<script>
+    onscroll = function () {
+        if ((document.documentElement.scrollTop || document.body.scrollTop) > Math.min(innerWidth/2,innerHeight/2)) {
+            return_box.style.display = "block"
+        } else {
+            return_box.style.display = "none"
+        }
+    }
+    return_box.onclick=function(){
+        scrollTo(0,0)
+    }
+    console.log(document.documentElement.scrollTop)
+</script>
 </body>
 </html>

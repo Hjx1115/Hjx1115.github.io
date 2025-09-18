@@ -1,4 +1,4 @@
-var a="  abc\nd ef   "
+var a = "  abc\nd ef   "
 console.log(a.trimEnd);
 
 // const bubleCreate=()=>{
@@ -16,3 +16,14 @@ console.log(a.trimEnd);
 // setInterval(() => {
 //     bubleCreate()
 // }, 200);
+
+// fanhui.onclick = function () {
+//     history.back()
+// }
+// onscroll = function () {
+//     if (document.documentElement.scrollTop || document.body.scrollTop > 200) {
+//         return_box.style.display = "block"
+//     } else {
+//         return_box.style.display = "none"
+//     }
+// }

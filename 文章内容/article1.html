@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./article.css">
     <link rel="stylesheet" href="./font/iconfont.css">
+    <script src="../blog 主页/js/js.js"></script>
     <title>麦芽糖（一）</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="box1">
-                <span id="top" class="iconfont icon-qita-fanhuizhuye">
-                    <a href="../index.html"> - 返回主页</a>
+            <div class="box1" id="fanhui">
+                <span class="iconfont icon-qita-fanhuizhuye">
+                    <a> - 上一页</a>
                 </span>
             </div>
             <div class="box2">
@@ -43,8 +44,23 @@
         </div>
     </div>
  <!-- 回到顶部按钮 -->
-    <div class="return_box">
-        <a href="#top">回到<br>顶部</a>
+    <div class="return_box" id="return_box">
+        <a>回到<br>顶部</a>
     </div>
+    <script>
+        fanhui.onclick = function () {
+            history.back()
+        }
+        onscroll = function () {
+            if ((document.documentElement.scrollTop || document.body.scrollTop) > 300) {
+                return_box.style.display = "block"
+            } else {
+                return_box.style.display = "none"
+            }
+        }
+        return_box.onclick=function(){
+            scrollTo(0,0)
+        }
+    </script>
 </body>
 </html>

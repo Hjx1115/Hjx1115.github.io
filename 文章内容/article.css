@@ -100,18 +100,19 @@ hr {
     height: 3.125rem;
     background-color: #e4bc8b;
     border-radius: 0 .625rem .625rem 0;
-    font-size: .9375rem;
+    font-size: .5rem;
     line-height: 1.5625rem;
     font-weight: 600;
     text-align: center;
     position: fixed;
     top: 80%;
     transition: all .5s;
+    display: none;
 
 }
 
 .return_box:hover {
-    font-size: .875rem;
+    font-size: .6rem;
 }
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <link rel="stylesheet" href="./login.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="./images/font/iconfont.css">
+    <script src="../blog 主页/js/js.js"></script>
 </head>
+
 <body>
-    <div class="return">
-            <a href="../index.html">
-                <div class="iconfont icon-qita-fanhuizhuye"> - 返回首页</div>
-            </a>
+    <div class="return" id="fanhui">
+        <a>
+            <div class="iconfont icon-qita-fanhuizhuye"> - 上一页</div>
+        </a>
     </div>
     <div class="box">
-        
+
         <div class="pre-box">
             <h1>WELCOME</h1>
             <p>JOIN US</p>
@@ -24,7 +27,7 @@
             </div>
         </div>
         <!-- 注册页面 -->
-        <form class="register-form" action="#" method="post"  target="_blank">
+        <form class="register-form" action="#" method="post" target="_blank">
             <div class="title-box">
                 <h1>注册</h1>
             </div>
@@ -54,38 +57,25 @@
         </form>
     </div>
     <script>
-        let flag=true
-        const mySwitch=()=>{
-            if(flag){
-                $(".pre-box").css("transform","translateX(100%)")
-                $(".pre-box").css("background-color","#ccd3f6")
-                $("img").attr("src","./images/2.jpg")
+        let flag = true
+        const mySwitch = () => {
+            if (flag) {
+                $(".pre-box").css("transform", "translateX(100%)")
+                $(".pre-box").css("background-color", "#ccd3f6")
+                $("img").attr("src", "./images/2.jpg")
             }
-            else{
-                $(".pre-box").css("transform","translateX(0%)")
-                $(".pre-box").css("background-color","#e1c5f4")
-                $("img").attr("src","./images/1.jpg")
+            else {
+                $(".pre-box").css("transform", "translateX(0%)")
+                $(".pre-box").css("background-color", "#e1c5f4")
+                $("img").attr("src", "./images/1.jpg")
             }
-            flag=!flag
+            flag = !flag
+        }
+        //
+        fanhui.onclick = function () {
+            history.back()
         }
     </script>
-    <!-- 泡泡实现 -->
-    <!-- <script>
-        const bubleCreate=()=>{
-            const body=document.body
-            const buble=document.createElement('span')
-            let r=Math.random()*5+25 //25~30
-            buble.style.width=r+'px'
-            buble.style.height=r+'px'
-            buble.style.left=Math.random()*innerWidth+'px'
-            body.append(buble)
-            setTimeout(() => {
-                buble.remove()
-            }, 4000);
-        }
-        setInterval(() => {
-            bubleCreate()
-        }, 200);
-    </script> -->
 </body>
+
 </html>

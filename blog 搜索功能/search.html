@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./search.css">
     <link rel="stylesheet" href="./images/font/iconfont.css">
+    <script src="../blog 主页/js/js.js"></script>
     <title>搜索</title>
 </head>
 
 <body>
-    <div class="return">
-        <a href="../index.html">
-            <div class="iconfont icon-qita-fanhuizhuye"> - 返回首页</div>
+    <div class="return" id="fanhui">
+        <a>
+            <div class="iconfont icon-qita-fanhuizhuye"> - 上一页</div>
         </a>
     </div>
     <div id="bg">
@@ -35,7 +36,11 @@
             <button onclick="add()">搜索</button>
         </div>
     </div>
-
+    <script>
+        fanhui.onclick = function () {
+            history.back()
+        }
+    </script>
 </body>
 
 </html>

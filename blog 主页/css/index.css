@@ -177,6 +177,7 @@ h1 {
     position: fixed;
     top: 80%;
     transition: all .5s;
+    display: none;
 }
 
 .return_box:hover {
@@ -444,5 +445,8 @@ footer a:hover {
     }
     .container2 {
         line-height: 5vw;
+    }
+    footer {
+        font-size: 2rem;
     }
 }
